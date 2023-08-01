@@ -1,0 +1,5 @@
+full_name = input("inter your full name")
+number = input("inter your number")  #mobile number should be according to this formate (05*-***-****)
+yob = input("inter your year of birth")
+user_age = 2023 - ("yob")
+print ("user_age")

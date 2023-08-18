@@ -3,7 +3,7 @@ for i in range(0,students_count):
     total = 0
     my_marks = []
     marks_count = int(input("Inter the Mark Count: "))
-    for i in range(0,marks_count):
+    for j in range(0,marks_count):
         mark = float(input("Enter your Mark: "))
         my_marks .append(mark)
         total += mark

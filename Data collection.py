@@ -31,7 +31,12 @@ while True:
 
     elif selection == 4:
         product_number = input("Enter product number :")
-        del product [product_number]
-        print(4)
-    else:
+        for i in products:
+            if i.get("id") == product_number:
+                del i
+                break
+
+    elif selection == 5:
         exit()
+    else:
+        print("Invalid Input")

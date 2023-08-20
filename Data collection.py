@@ -26,6 +26,11 @@ while True:
     elif selection == 3:
         product_number = input("Enter product number :")
         product_quantity = int(input("Inter Product Quantity: "))
+        for i in products:
+            if i['id'] == product_number:
+
+                i['id']
+                break
         final_price = product_price * product_quantity
         new_quantity = product_qty - product_quantity
 
@@ -33,7 +38,7 @@ while True:
         product_number = input("Enter product number :")
         for i in products:
             if i.get("id") == product_number:
-                del i
+                products.remove(i)
                 break
 
     elif selection == 5:

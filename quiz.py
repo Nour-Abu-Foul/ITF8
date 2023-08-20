@@ -29,8 +29,10 @@ Choose an option: """))
 def find_smallest_largest_number():
     user_input = input("Enter a list of numbers separated by spaces: ")
     numbers = [int(x) for x in user_input.split()]
+    numbers.sort()
     largest_number = max(numbers)
     smallest_number = min(numbers)
+
     print("largert number: ",largest_number)
     print("smallest number: ",smallest_number)
 find_smallest_largest_number()

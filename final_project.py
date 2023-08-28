@@ -48,6 +48,7 @@ class Student:
     # student_number (user_input)
     student_number = int(input("Inter Your Number: "))
     # courses_list (List of Course Objects)
+    courses_list = ["Java Course","python Course","HTML Course","UX-UI Course"]
     def __str__(self):
         courses_info = "\n".join([str(course) for course in self.courses_list])
         return f"Student ID: {self.student_id}\nStudent Name: {self.student_name}\nStudent Age: {self.student_age}\nStudent Number: {self.student_number}\nCourses:\n{courses_info}"
